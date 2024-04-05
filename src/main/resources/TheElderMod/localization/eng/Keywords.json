@@ -1,0 +1,39 @@
+[
+  {
+    "PROPER_NAME": "This is displayed in the tooltip.",
+    "NAMES": [
+      "these",
+      "are",
+      "detected",
+      "in",
+      "the",
+      "text"
+    ],
+    "DESCRIPTION": "This is displayed in the tooltip. Spaces should not be used be avoided in NAMES, with the exception of multi-word keywords (see next entry)."
+  },
+  {
+    "PROPER_NAME": "Multiword Keyword",
+    "NAMES": [
+      "multiword keyword",
+      "multiword_keyword",
+      "multiword_keywords"
+    ],
+    "DESCRIPTION": "Make sure the first element in NAMES has no underscores. The rest should use _ in the place of spaces. In card text, you'll use the underscore versions."
+  },
+  {
+    "PROPER_NAME": "Foreshadow",
+    "NAMES": [
+      "Foreshadow",
+      "foreshadow"
+    ],
+    "DESCRIPTION": "When gained, you also gain the matching card. When you play this card, if the matching card is to the right of it, the matching card is also played."
+  },
+  {
+    "PROPER_NAME": "Hatch",
+    "NAMES": [
+      "Hatch",
+      "hatch"
+    ],
+    "DESCRIPTION": "Discarding or playing this card reduces the hatch number, when discarded or played at 1, it transforms into a different card."
+  }
+]

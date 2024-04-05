@@ -1,0 +1,16 @@
+{
+  "${modID}:RelicID": {
+    "NAME": "Good Relic",
+    "FLAVOR": "Flavor text displayed in detailed relic view.",
+    "DESCRIPTIONS": [
+      "Gain [E] at the start of your turn. [E] is an energy icon."
+    ]
+  },
+  "${modID}:ShiftingSkinRelic": {
+    "NAME": "Shifting Skin",
+    "FLAVOR": "Your mind, as is your body.",
+    "DESCRIPTIONS": [
+      "Whenever you play a card discard your leftmost card, if you do, draw a card."
+    ]
+  }
+}

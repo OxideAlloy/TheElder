@@ -1,0 +1,32 @@
+{
+  "${modID}:ExampleCard": {
+    "NAME": "Name",
+    "DESCRIPTION": "Description.",
+    "UPGRADE_DESCRIPTION": "This will automatically be used if the card is upgraded. Remove it if unneeded.",
+    "EXTENDED_DESCRIPTION": [
+      "You can put more text in here.",
+      "If you need to use it for stuff.",
+      "Blizzard is a good example for this."
+    ]
+  },
+  "${modID}:TestCard1": {
+    "NAME": "Test Card 1",
+    "DESCRIPTION": "Gain !B! Block. NL Deal !D! damage. NL Apply !M! Weak."
+  },
+  "${modID}:Rend": {
+    "NAME": "Rend",
+    "DESCRIPTION": "theelder:Foreshadow Shred NL Deal !D! damage. NL Apply !M! Vulnerable"
+  },
+  "${modID}:Shred": {
+    "NAME": "Shred",
+    "DESCRIPTION": "Deal !D! damage."
+  },
+  "${modID}:FleshWall": {
+    "NAME": "Flesh Wall",
+    "DESCRIPTION": "Hatch !M! NL Gain !B! Block."
+  },
+  "${modID}:FleshBlossom": {
+    "NAME": "Flesh Blossom",
+    "DESCRIPTION": "Deal !D! damage."
+  }
+}
