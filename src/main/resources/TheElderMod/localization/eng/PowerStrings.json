@@ -4,5 +4,17 @@
     "DESCRIPTIONS": [
       "You are Very Cool and Strong."
     ]
+  },
+  "${modID}:HungerPower": {
+    "NAME": "Hunger",
+    "DESCRIPTIONS": [
+      "When you deal unblocked damage, lose 1 Hunger and heal 1 HP."
+    ]
+  },
+  "${modID}:BloatPower": {
+    "NAME": "Bloat",
+    "DESCRIPTIONS": [
+      "When gained, gain that much max HP. At the end of combat, lose any extra max HP."
+    ]
   }
 }

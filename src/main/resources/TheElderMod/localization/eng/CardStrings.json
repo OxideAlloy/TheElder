@@ -28,5 +28,29 @@
   "${modID}:FleshBlossom": {
     "NAME": "Flesh Blossom",
     "DESCRIPTION": "Deal !D! damage."
+  },
+  "${modID}:Taste": {
+    "NAME": "Taste",
+    "DESCRIPTION": "Apply !M! Frail and !theelder:secondMagic! Constricted."
+  },
+  "${modID}:Bloat": {
+    "NAME": "Bloat",
+    "DESCRIPTION": "Innate. Retain. NL Gain !M! Bloat and Hunger. NL Exhaust."
+  },
+  "${modID}:Thrill": {
+    "NAME": "Thrill",
+    "DESCRIPTION": "theelder:Offer 2. NL Deal !D! damage. NL Gain 1 energy and draw 1 card."
+  },
+  "${modID}:Nibble": {
+    "NAME": "Nibble",
+    "DESCRIPTION": "theelder:Mimic. NL Deal !D! damage."
+  },
+  "${modID}:Strike": {
+    "NAME": "Strike",
+    "DESCRIPTION": "theelder:Shifting. NL Deal !D! damage."
+  },
+  "${modID}:Defend": {
+    "NAME": "Defend",
+    "DESCRIPTION": "theelder:Shifting. NL Gain !B! block."
   }
 }

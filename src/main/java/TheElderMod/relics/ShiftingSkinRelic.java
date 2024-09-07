@@ -5,10 +5,13 @@ import TheElderMod.actions.DiscardLeftAction;
 import TheElderMod.character.TheElder;
 import com.megacrit.cardcrawl.actions.common.DiscardAction;
 import com.megacrit.cardcrawl.actions.common.DrawCardAction;
+import com.megacrit.cardcrawl.actions.common.GainBlockAction;
 import com.megacrit.cardcrawl.actions.common.RelicAboveCreatureAction;
 import com.megacrit.cardcrawl.actions.utility.UseCardAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
+import com.megacrit.cardcrawl.relics.AbstractRelic;
+import com.megacrit.cardcrawl.relics.CaptainsWheel;
 
 import static TheElderMod.TheElderMod.makeID;
 
@@ -22,13 +25,40 @@ public class ShiftingSkinRelic extends BaseRelic {
         super(ID, NAME, TheElder.Enums.CARD_COLOR, RARITY, SOUND);
     }
 
+//    public void atBattleStart() {
+//        this.counter = 0;
+//    }
 
     @Override
     public void onUseCard(AbstractCard targetCard, UseCardAction useCardAction) {
         if (AbstractDungeon.player.hand.size()>1) {
-            this.flash();
-            this.addToBot(new DiscardLeftAction());
-            this.addToBot(new DrawCardAction(1));
+                this.flash();
+                this.addToBot(new DiscardLeftAction());
+                this.addToBot(new DrawCardAction(1));
         }
+    }
+
+
+//    @Override
+//    public void onUseCard(AbstractCard targetCard, UseCardAction useCardAction) {
+//        if (AbstractDungeon.player.hand.size()>1) {
+//            if(this.counter==1){
+//                this.flash();
+//                this.addToBot(new DiscardLeftAction());
+//                this.addToBot(new DrawCardAction(1));
+//                this.counter=0;
+//            } else {
+//                this.counter=1;
+//            }
+//        }
+//    }
+
+//    public void onVictory() {
+//        this.counter = -1;
+//        //this.grayscale = false;
+//    }
+
+    public AbstractRelic makeCopy() {
+        return new ShiftingSkinRelic();
     }
 }

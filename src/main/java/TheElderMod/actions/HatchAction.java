@@ -28,7 +28,7 @@ public class HatchAction extends AbstractGameAction {
         Iterator var1 = GetAllInBattleInstances.get(this.uuid).iterator();
         while (var1.hasNext()) {
             AbstractCard c = (AbstractCard) var1.next();
-                c.baseMagicNumber -= 1;
+                c.magicNumber -= 1;
                 if(c.magicNumber <= 0) {
                 c.exhaust = true;
                 this.addToTop(new ExhaustSpecificCardAction(c, AbstractDungeon.player.discardPile));

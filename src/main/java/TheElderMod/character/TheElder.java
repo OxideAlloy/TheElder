@@ -1,5 +1,10 @@
 package TheElderMod.character;
 
+import TheElderMod.cards.Bloat;
+import TheElderMod.cards.Defend;
+import TheElderMod.cards.FleshWall;
+import TheElderMod.cards.Strike;
+import TheElderMod.relics.ShiftingSkinRelic;
 import basemod.abstracts.CustomEnergyOrb;
 import basemod.abstracts.CustomPlayer;
 import basemod.animations.SpriterAnimation;
@@ -82,11 +87,19 @@ public class TheElder extends CustomPlayer {
         ArrayList<String> retVal = new ArrayList<>();
         //List of IDs of cards for your starting deck.
         //If you want multiple of the same card, you have to add it multiple times.
-        retVal.add(Strike_Red.ID);
-        retVal.add(Strike_Red.ID);
-        retVal.add(Defend_Blue.ID);
-        retVal.add(Defend_Blue.ID);
-        retVal.add(Neutralize.ID);
+//        retVal.add(Strike_Red.ID);
+//        retVal.add(Strike_Red.ID);
+//        retVal.add(Defend_Blue.ID);
+//        retVal.add(Defend_Blue.ID);
+//        retVal.add(Neutralize.ID);
+        for (int i = 0; i < 4; i++) {
+            retVal.add(Strike.ID);
+        }
+        for (int i = 0; i < 4; i++) {
+            retVal.add(Defend.ID);
+        }
+        retVal.add(Bloat.ID);
+        retVal.add(FleshWall.ID);
 
         return retVal;
     }
@@ -97,6 +110,7 @@ public class TheElder extends CustomPlayer {
         //IDs of starting relics. You can have multiple, but one is recommended.
         //retVal.add(BurningBlood.ID);
         retVal.add(PrismaticShard.ID);
+        retVal.add(ShiftingSkinRelic.ID);
 
         return retVal;
     }

@@ -34,6 +34,31 @@
       "Hatch",
       "hatch"
     ],
-    "DESCRIPTION": "Discarding or playing this card reduces the hatch number, when discarded or played at 1, it transforms into a different card."
+    "DESCRIPTION": " Playing this card or discarding it from your hand reduces the Hatch value, when discarded or played at 1, it transforms into a different card."
+  },
+  {
+      "PROPER_NAME": "Offer",
+      "NAMES": [
+      "Offer",
+      "offer"
+    ],
+  "DESCRIPTION": "Reduce max HP and Bloat by this amount. Your max HP cannot be less than 1."
+  },
+  {
+    "PROPER_NAME": "Mimic",
+    "NAMES": [
+      "Mimic",
+      "mimic"
+    ],
+    "DESCRIPTION": "Draw a card and discard your leftmost card then place this card on top of you deck."
+  },
+  {
+    "PROPER_NAME": "Shifting",
+    "NAMES": [
+      "Shifting",
+      "shifting"
+    ],
+    "DESCRIPTION": "Values on this card are randomized from 50% to 150% of their base values when drawn."
   }
+
 ]
